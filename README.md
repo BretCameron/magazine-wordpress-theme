@@ -14,7 +14,7 @@ A magazine-style Wordpress theme, built on top of the Underscores starter theme,
 
 ## Template
 
-Build using the [\_s ("Underscores")](https://underscores.me) WordPress Starter Theme. 
+Build using [\_s (Underscores)](https://underscores.me), a WordPress starter theme. 
 
 ## Languages
 - [PHP](http://www.php.net/)
