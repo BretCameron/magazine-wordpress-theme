@@ -12,10 +12,6 @@ A magazine-style Wordpress theme, built on top of the Underscores starter theme,
 - Article pages which promote related articles via a sidebar and footer.
 - A custom-built form for email sign-ups 
 
-## Template
-
-Build using [\_s (Underscores)](https://underscores.me), a WordPress starter theme. 
-
 ## Languages
 - [PHP](http://www.php.net/)
 - HTML5
@@ -25,3 +21,7 @@ Build using [\_s (Underscores)](https://underscores.me), a WordPress starter the
 
 ## Authors
 - Bret Cameron
+
+## Acknowledgments
+
+Built using [\_s (Underscores)](https://underscores.me), a WordPress starter theme, as a template. 
