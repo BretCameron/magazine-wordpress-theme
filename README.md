@@ -20,7 +20,7 @@ A magazine-style Wordpress theme, built on top of the Underscores starter theme,
 - [JQUERY 3.3.1](https://jquery.com)
 
 ## Authors
-- Bret Cameron
+- [Bret Cameron](mailto:bretcameron@gmail.com)
 
 ## Acknowledgments
 Built using [\_s (Underscores)](https://underscores.me), a WordPress starter theme, as a template. 
