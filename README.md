@@ -13,8 +13,11 @@ A magazine-style Wordpress theme, built on top of the Underscores starter theme,
 - A custom-built form for email sign-ups 
 
 ## Built With
+- [PHP](http://www.php.net/)
 - HTML5
 - CSS3
 - JAVASCRIPT (ECMA 2018)
 - [JQUERY 3.3.1](https://jquery.com)
-- [PHP](http://www.php.net/)
+
+## Authors
+- Bret Cameron
