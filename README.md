@@ -23,5 +23,4 @@ A magazine-style Wordpress theme, built on top of the Underscores starter theme,
 - Bret Cameron
 
 ## Acknowledgments
-
 Built using [\_s (Underscores)](https://underscores.me), a WordPress starter theme, as a template. 
