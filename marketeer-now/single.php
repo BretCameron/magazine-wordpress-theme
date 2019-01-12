@@ -11,30 +11,70 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
-			<div class="container">
+<div id="primary" class="content-area">
+	<main id="main" class="site-main">
+		<div class="container">
 			
 			
 			<?php
 		while (have_posts()) :
 			the_post();
+		?> 
+			<br>
+			<div class="flex-article">
+				<div class="article-block">
+<?php
 
-		get_template_part('template-parts/content', get_post_type());
+get_template_part('template-parts/content', get_post_type());
 
-		the_post_navigation();
 
-			// If comments are open or we have at least one comment, load up the comment template.
-		if (comments_open() || get_comments_number()) :
-			comments_template();
-		endif;
+the_post_navigation();
 
-		endwhile; // End of the loop.
-		?>
+// If comments are open or we have at least one comment, load up the comment template.
+if (comments_open() || get_comments_number()) :
+	comments_template();
+endif;
 
-			</div><!-- .container -->
-		</main><!-- #main -->
-	</div><!-- #primary -->
+endwhile; // End of the loop.
+?>
+
+				</div>
+				<div class="related-block">
+				
+					<h2>Related Stories</h2>
+
+					<?php
+
+				$relatedPosts = new WP_Query('posts_per_page=5');
+				$postid = get_the_ID();
+
+				while ($relatedPosts->have_posts()) : $relatedPosts->the_post();
+
+				if (get_the_ID() !== $postid) :
+					$content = apply_filters('the_content', $post->post_content);
+				?>
+<a class="permalink" href="<?php the_permalink(); ?>">
+<div>
+<!-- MAKE IMAGE THUMBNAIL A CLICKABLE LIGHTBOX -->
+						<?php marketeer_now_post_thumbnail(); ?>
+					<div><?= the_title() ?></div>
+					<br>
+				</div>
+				</a>
+
+<?php
+endif;
+				
+				// require 'post-preview.php';
+endwhile;
+
+?>
+
+				</div>
+			</div>
+		</div><!-- .container -->
+	</main><!-- #main -->
+</div><!-- #primary -->
 
 <?php
 get_sidebar();
