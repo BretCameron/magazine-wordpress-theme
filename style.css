@@ -1,0 +1,500 @@
+/*!
+Theme Name: Marketeer Now
+Theme URI: http://underscores.me/
+Author: Bret Cameron
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: marketeer-now
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Marketeer Now is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+/* BRET'S ADDITIONS */
+
+/* GENERIC CSS */
+
+body {
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #ffffff;
+}
+
+h1 {
+  font-style: italic;
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: 200;
+  letter-spacing: 0.5em;
+}
+
+p {
+  font-size: 19px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 10px;
+}
+
+/* @media only screen and (min-width: 900px) {
+  .container {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+} */
+
+/* HEADER LINKS */
+
+#main {
+  background: white;
+}
+
+.post-thumbnail > img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 40vh;
+  /* overflow: hidden; */
+}
+
+#header-links {
+  background-color: rgb(34, 34, 34);
+}
+
+#primary-menu {
+  margin: 0 0 0 -10.5px;
+  padding: 0;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+img.custom-logo {
+  margin: 0;
+  padding: 0;
+}
+
+#tagline {
+  color: white;
+  font-style: italic;
+  font-size: 1.2em;
+  text-align: right;
+  margin-top: 0.5em;
+}
+
+.flex-logo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#nav-header {
+  background-color: black;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  justify-content: space-between;
+  /* box-shadow: 0px 2px 12px 0px rgb(44, 44, 44); */
+}
+
+ul#primary-menu > li {
+  display: inline-block;
+  list-style: none;
+  text-decoration: none;
+  color: rgb(230, 230, 230);
+  padding: 10px 10px 10px 10px;
+}
+
+ul#primary-menu > li:hover {
+  background-color: rgb(44, 44, 44);
+
+  color: white;
+  text-decoration: underline;
+}
+
+#primary-menu > li > a {
+  color: rgb(230, 230, 230);
+  text-decoration: none;
+}
+
+#primary-menu > li > a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* @media screen and (max-width: 600px) {
+  .header-link {
+    visibility: hidden;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  .visible {
+    display: block;
+    visibility: visible;
+    padding: 10px 10px 10px 10px;
+  }
+  .dropdown-link {
+    visibility: visible;
+    float: none;
+    display: block;
+    text-align: center;
+    margin-bottom: -20px;
+    margin-left: 5px;
+  }
+  .dropdown-link:hover {
+    background-color: rgb(44, 44, 44);
+    color: white;
+  }
+  .clicked {
+    margin-bottom: 0px;
+  }
+}
+
+/* LOGO */
+
+/* ARROW */
+
+/* .arrow {
+  float: right;
+  border: solid rgb(204, 204, 204);
+  border-width: 0 1px 1px 0;
+  padding: 3px;
+  margin-top: -20px;
+  margin-right: 10px;
+  transform: rotate(45deg) scale(1.5);
+  -webkit-transform: rotate(45deg) scale(1.5);
+  transition-duration: 200ms, 200ms;
+  transition-property: transform, margin-top;
+}
+
+.arrow-down {
+  color: pink;
+  transform: rotate(135deg) scale(1.5);
+  -webkit-transform: rotate(135deg) scale(1.5);
+  margin-top: -16px;
+}
+
+.menu-container {
+  margin-left: 48%;
+}
+
+.menu-icon {
+  width: 20px;
+  height: 1px;
+  background-color: rgb(204, 204, 204);
+  margin: 6px 0;
+} */
+
+/* POSTS HOMEPAGE */
+
+.inner-image > a.post-thumbnail > img {
+  object-fit: cover;
+  width: 100%;
+  height: 40vh;
+}
+
+.flex-hero {
+  display: flex;
+  margin: -2px;
+}
+
+#featured-post {
+  margin-top: 0px;
+  flex: 2;
+  padding: 0;
+}
+
+.announcement-wrapper {
+  flex: 1;
+  text-align: center;
+  border: none;
+  padding: 2px;
+}
+
+.announcement {
+  padding: 20px;
+  height: 36.5vh;
+}
+
+.announcement > p {
+  padding: 20px;
+  font-size: 18px;
+}
+
+#announcement-button {
+  min-height: 2rem;
+  margin-top: 15px;
+  padding: 15px;
+  border: none;
+  font-size: 16px;
+  color: white;
+  background-color: darkcyan;
+  width: 90%;
+}
+
+#featured-post > h1,
+.latest-posts > .latest-post > h1 {
+  margin: 0px 0 20px 0;
+}
+
+.latest-posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -2px;
+}
+
+.latest-post {
+  flex: 1;
+  min-width: 300px;
+  padding: 2px;
+  /* width: 25%; */
+  /* min-width: 200px; */
+  /* max-width: 400px; */
+  /* max-width: 400px; */
+}
+
+/* TEST */
+
+.image-wrapper {
+  object-fit: fill;
+  overflow: hidden;
+  width: 100%;
+}
+
+.flex-category {
+  display: flex;
+  justify-content: right;
+  transform: translateY(-40px);
+  margin-bottom: -40px;
+  pointer-events: none;
+}
+
+.box-left {
+  flex: auto;
+  background: transparent;
+  text-align: right;
+}
+
+.box-right {
+  background-color: white;
+  font-size: 18px;
+  padding: 10px;
+  /* font-style: italic; */
+  /* letter-spacing: 2px; */
+  text-transform: uppercase;
+  text-align: right;
+}
+
+ul.post-categories {
+  pointer-events: all;
+  cursor: pointer;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+  font-size: 17px;
+}
+
+ul.post-categories > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+ul.post-categories > li > a:hover {
+  text-decoration: underline;
+}
+
+.inner-image {
+  /* object-fit: cover; */
+  width: 100%;
+  height: 40vh;
+  transition-duration: 150ms;
+  transition-timing-function: ease-out;
+  transform: scale(1.07);
+  filter: brightness(0.92);
+}
+
+.inner-image:hover {
+  transform: scale(1.1);
+  filter: brightness(1.02);
+}
+
+.read-time {
+  text-transform: uppercase;
+  font-style: italic;
+  margin: -10px 0 20px 0;
+  padding: 0 0 0px 0s;
+  /* color: blue; */
+  flex: 1;
+}
+
+.homepage-category > ul > li {
+  list-style: none;
+  padding: 0px 0 40vh 0;
+  margin: -40vh 0 0 0;
+  flex: 1;
+  position: relative;
+}
+
+.homepage-category > ul > li > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  background-color: grey;
+}
+
+.homepage-category > ul > li > a:hover {
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: black;
+}
+
+.content-preview {
+  padding-right: 40px;
+}
+
+a.permalink {
+  text-decoration: none;
+  color: #000;
+}
+
+a.permalink:hover {
+  text-decoration: underline;
+}
+
+a.permalink > h1 {
+  margin-top: 8px;
+  padding-right: 10px;
+}
+
+/* FOOTER */
+
+footer {
+  color: white;
+  text-align: center;
+}
+
+.footer-top {
+  background-color: black;
+  height: 10em;
+}
+
+footer p {
+  padding-top: 1em;
+}
+
+footer h2 {
+  font-size: 1em;
+  padding-top: 1.6em;
+  font-style: italic;
+}
+
+/* PAGE */
+
+.flex-article {
+  display: flex;
+}
+
+.article-block {
+  flex: 9;
+  padding-right: 20px;
+}
+
+.related-block {
+  flex: 4;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-left: 1px solid lightgray;
+}
+
+.related-img-wrapper {
+  object-fit: fill;
+  overflow: hidden;
+  width: 100%;
+  height: 12vw;
+}
+
+.related-stories-img {
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  transition-property: filter, transform;
+}
+
+a.permalink:hover > div > .related-stories-img {
+  filter: brightness(0.9);
+  transform: scale(1.04);
+}
+
+.related-title {
+  padding-top: 5px;
+  font-size: 17px;
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* SIDEBAR FORM */
+
+.sidebar-form {
+  text-align: center;
+}
+.sidebar-form > input {
+  box-sizing: border-box;
+  height: 1.7rem;
+  font-size: 1rem;
+  width: 100%;
+  border: none;
+  border-bottom: 1px dashed grey;
+  text-align: center;
+  font-style: italic;
+}
+
+.sidebar-form > button {
+  margin-top: 10px;
+  box-sizing: border-box;
+  height: 2.2rem;
+  width: 100%;
+  background: rgb(24, 24, 24);
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  transition-duration: 100ms;
+}
+
+.sidebar-form > button:hover {
+  background: rgb(180, 180, 180);
+  color: black;
+}
+
+.sidebar-form > button:focus {
+  outline: none;
+}
+
+.sidebar-form > input:focus {
+  outline: none;
+}
+
+/* LIGHTBOX */
